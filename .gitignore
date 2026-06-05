@@ -12,11 +12,14 @@ build/
 *.log
 *.bak           
 /data/
-*.csv
 *.npy
 *.zip
 *.h5
 *.hdf5
 *.ckpt
 *.model
-*.pt    
+*.py
+# Allow specific tracked files
+!train_metadata.csv
+!test_metadata.csv
+!best_cnn_baseline.pth
