@@ -134,10 +134,10 @@ class RoPESelfAttention(nn.Module):
 
     def forward(self, x):
         B, T, D = x.shape
+        cos, sin = self.rope(x)
         qkv = self.qkv(x).reshape(B, T, 3, self.heads, self.head_dim)
         qkv = qkv.permute(2, 0, 3, 1, 4)
         q, k, v = qkv[0], qkv[1], qkv[2]
-        cos, sin = self.rope(q)
         q = apply_rotary_emb(q, cos, sin)
         k = apply_rotary_emb(k, cos, sin)
         attn = torch.matmul(q, k.transpose(-2, -1)) / math.sqrt(self.head_dim)
