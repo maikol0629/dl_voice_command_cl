@@ -19,7 +19,9 @@ build/
 *.ckpt
 *.model
 *.py
+!models.py
+!data.py
 # Allow specific tracked files
 !train_metadata.csv
 !test_metadata.csv
-!best_cnn_baseline.pth
+

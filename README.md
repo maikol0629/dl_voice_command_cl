@@ -13,14 +13,16 @@ Competencia Kaggle: [Voice Commands Classification 2026](https://www.kaggle.com/
 
 | Archivo | Descripción |
 |---------|-------------|
-| `01_exploracion_datos.ipynb` | Análisis exploratorio de datos con carga de metadatos reales |
-| `02_preprocesamiento.ipynb` | Extracción de características (MFCC, Mel-spectrogramas) y data augmentation |
-| `03_modelo_baseline_cnn.ipynb` | CNN baseline sobre Mel-spectrogramas (3 capas convolucionales) |
-| `04_modelo_crnn.ipynb` | CRNN: CNN 1D + BiLSTM para modelado temporal |
-| `05_modelo_transformer.ipynb` | Spectrogram Transformer con RoPE y SwiGLU |
-| `06_evaluacion_robustez.ipynb` | Evaluación comparativa de los 3 modelos en test adversarial |
-| `INFORME_PROYECTO.PDF` | Informe ejecutivo del proyecto (5-10 páginas) |
-| `ENTREGA1.pdf` | Primera entrega del proyecto |
+| `01 - exploración de datos.ipynb` | Análisis exploratorio de datos con carga de metadatos reales |
+| `02 - preprocesado.ipynb` | Extracción de características (MFCC, Mel-spectrogramas) y data augmentation |
+| `03 - arquitectura de linea de base.ipynb` | CNN baseline sobre Mel-spectrogramas con BatchNorm |
+| `04 - arquitectura crnn.ipynb` | CRNN: CNN 2D + BiLSTM para modelado temporal sobre mel-espectrogramas |
+| `05 - arquitectura transformer.ipynb` | Spectrogram Transformer con RoPE y atención global |
+| `06 - evaluación de robustez.ipynb` | Evaluación comparativa de los 3 modelos en test adversarial |
+| `07 - optimización de hiperparámetros.ipynb` | LR Range Test y selección sistemática de hiperparámetros |
+| `models.py` | Definiciones unificadas de los 3 modelos y transformaciones |
+| `INFORME_PROYECTO.PDF` | Informe ejecutivo del proyecto |
+| `ENTREGA1.PDF` | Primera entrega del proyecto |
 | `train_metadata.csv` | Metadatos de entrenamiento generados por EDA |
 | `test_metadata.csv` | Metadatos de test generados por EDA |
 | `best_cnn_baseline.pth` | Pesos del modelo CNN baseline entrenado |
