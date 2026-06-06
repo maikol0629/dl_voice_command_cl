@@ -74,7 +74,7 @@ def load_data(train_metadata_csv, train_audio_dir, val_size=0.2, seed=42, batch_
 def load_adv_test(test_dir, label_encoder, batch_size=64):
     from pathlib import Path as P
     test_dir = P(test_dir)
-    adv_meta_path = test_dir / 'metadata.csv'
+    adv_meta_path = test_dir / 'test_metadata.csv'
     if not adv_meta_path.exists():
         return None, 0
 
