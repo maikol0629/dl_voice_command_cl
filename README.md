@@ -37,7 +37,7 @@ Cada notebook incluye detección automática de Colab. Al ejecutar en Colab:
 
 ## Video de presentación
 
-[Enlace al video en YouTube](https://youtube.com) <!-- Reemplazar con el enlace real -->
+[Enlace al video en YouTube](https://youtu.be/5GqRAj30HNg) <!-- Reemplazar con el enlace real -->
 
 ## Dataset
 
